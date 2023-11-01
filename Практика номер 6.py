@@ -11,8 +11,8 @@
 # print(z1, z2)
 
 # 2
-# a = []
-# print(a.max(), a.min())
+# a = [1, 6, 1, 2, 4, 17, 29, 0]
+# print(max(a), min(a))
 
 # Вариант 10
 # 1
@@ -28,11 +28,11 @@
 # 2
 # a = [19, 21, 8, 9, 25, 28, 5, 15, 24, 4, 31, 4, 56, 6, 18, 17]
 # b = a
-# for i in range(len(a)):
-#     if a[i] > 20:
-#         a[i] = 1
-#     elif a[i] < 10:
-#         a[i] = 0
+# for i in a:
+#     if i > 20:
+#         i = 1
+#     elif i < 10:
+#         i = 0
 #     else:
 #         pass
 # print(a, b)
@@ -53,16 +53,15 @@
 
 # 2
 # a = [19, 21, 8, 9, 25, 28, 5, 15]
-# for i in range(len(a)):
-#     if a[i] < 15:
-#         a[i] = a[i] * 2
+# for i in a:
+#     if i < 15:
+#         i = i * 2
 # print(a)
 
 # Вариант 4
 # 1
 # a = [1, 2, 4, 6, 7, 8, 10, 5, 3]
-# b = max(a)
-# print(b, a.index(b)+1)
+# print(max(a), a.index(max(a))+1)
 
 # 2
 a = [15, 7, 8, 4, 2, 3, 9]
