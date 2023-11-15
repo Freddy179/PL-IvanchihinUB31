@@ -75,21 +75,21 @@ if z!='F':
 else:
     print('Матрица несимметрична')
 
-# 2
-from random import randint
-N = int(input())
-M = int(input())
-a = []
-for i in range(N): #формируем матрицу
-    b = []
-    for j in range(M):
-        b.append([randint(-10, 10)])
-    a.append(b)
-for p in range(N): # выводим матрицу
-    for k in range(N):
-        print(a[p][k], end=' ')
-    print()
-d = 0
-spisok_strok = []
-spisok_stolbc = []
-for i in a:
+# # 2
+# from random import randint  # доделать
+# N = int(input())
+# M = int(input())
+# a = []
+# for i in range(N): #формируем матрицу
+#     b = []
+#     for j in range(M):
+#         b.append([randint(-10, 10)])
+#     a.append(b)
+# for p in range(N): # выводим матрицу
+#     for k in range(N):
+#         print(a[p][k], end=' ')
+#     print()
+# d = 0
+# spisok_strok = []
+# spisok_stolbc = []
+# for i in a:
