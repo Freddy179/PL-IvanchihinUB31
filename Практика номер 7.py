@@ -49,10 +49,9 @@
 # b = [18,27,98,78,67,54]
 # c = [196,26,7,280,17]
 # def summa(*args):
-#     s = list(args)
 #     z1 = 0
 #     z2 = 0
-#     for i in s:
+#     for i in args:
 #         for j in i:
 #             z1+=int(j)
 #             z2+=1
@@ -74,8 +73,8 @@
 # lenth = []
 # weight = []
 # for i in range(3):
-#     lenth.append(int(input()))
-#     weight.append(int(input()))
+#     lenth.append(int(input('Введите длину первой стороны треугольника: ')))
+#     weight.append(int(input('Введите длину второй стороны треугольника')))
 # print('Длины четырехугольников: ')
 # print(lenth)
 # print(weight)
