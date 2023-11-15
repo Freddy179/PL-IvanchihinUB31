@@ -108,5 +108,4 @@
 #     l = list()
 #     for j in i:
 #         l.append(j)
-#     print(l.sort())
 #     print(l)
