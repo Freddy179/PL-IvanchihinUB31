@@ -10,18 +10,18 @@ root.title('Иванчихин Илья УБ-31')
 root.geometry('400x400')
 
 def Give_to_file():
-    usname = Entry_user.get() # Получаем имя пользователя и делаем запрос
+    usname = Entry_user.get() 
     url = f'https://api.github.com/users/{usname}'
 
-    user_data = requests.get(url).json() # Получаем данные в json
-    need_keys = ['company', 'created_at', 'email', 'id', 'name', 'url'] # Нужные ключи
+    user_data = requests.get(url).json()
+    need_keys = ['company', 'created_at', 'email', 'id', 'name', 'url']
     
     data = dict()
     
-    for i in need_keys: # Проходим по нужным ключам и ищем подходящие пары под ключи
-        data[i] = user_data.get(i) # Получаем данные по ключам и записываем в словарь
+    for i in need_keys:
+        data[i] = user_data.get(i) 
         with open('C://Users/User/Desktop/vvod.txt', 'w') as file:
-            file.write(json.dumps(data, indent = 4)) # Записываем все в файл с помощью dumps. indent - количество отступов
+            file.write(json.dumps(data, indent = 4))
         
 lbl = Label(text='Введите Имя Пользователя: ')
 lbl.grid(column=0, row=0)
