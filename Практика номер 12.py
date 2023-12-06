@@ -14,7 +14,7 @@ def Give_to_file():
     url = f'https://api.github.com/users/{usname}'
 
     user_data = requests.get(url).json() # Получаем данные в json
-    need_keys = ("company", "created_at", "email", "id", "name", "url") # Нужные ключи
+    need_keys = ['company', 'created_at', 'email', 'id', 'name', 'url'] # Нужные ключи
     
     data = dict()
     
