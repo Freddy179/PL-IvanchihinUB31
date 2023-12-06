@@ -36,18 +36,18 @@ def Kalc():
         else:
             result = 'Ошибка: На 0 делить нельзя'
     
-    result_lbl1.config(text='Ответ' + str(result))
+    result_lbl1.config(text='Ответ: ' + str(result))
 
 def Check():
     selected_options = ""
     if check1.get():
-        selected_options += 'Вы выбрали первый вариант\n'
+        selected_options += 'Вы выбрали Первый вариант\n'
     if check2.get():
-        selected_options += 'Вы выбрали второй вариант\n'
+        selected_options += 'Вы выбрали Второй вариант\n'
     if check3.get():
-        selected_options += 'Вы выбрали третий вариант\n'
+        selected_options += 'Вы выбрали Третий вариант\n'
     
-    messagebox.showinfo('Выбранные опции', selected_options)
+    messagebox.showinfo('Выбранные чеки', selected_options)
 
 def File_save():
     text = Entry_file.get()
