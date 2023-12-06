@@ -10,7 +10,7 @@ window.geometry('400x400')
 
 vkladki = ttk.Notebook()
 
-tab1 = ttk.Frame(vkladki) # Добавляем вкладки
+tab1 = ttk.Frame(vkladki) 
 tab2 = ttk.Frame(vkladki)
 tab3 = ttk.Frame(vkladki)
 
@@ -20,9 +20,9 @@ vkladki.add(tab3, text='Работа с текстом')
 
 #Логика
 def Kalc():
-    num1 = float(ent1.get()) # Получаем 1 число
-    num2 = float(ent2.get()) # Получаем 2 число
-    operation = oper_combo.get() # Получаем тип операции
+    num1 = float(ent1.get())
+    num2 = float(ent2.get()) 
+    operation = oper_combo.get() 
     
     if operation == '+':
         result = num1 + num2
@@ -59,18 +59,18 @@ def File_save():
 
 
 # Калькулятор
-lbl1 = Label(tab1, text='Введите первое число: ') # Ввод первого числа
+lbl1 = Label(tab1, text='Введите первое число: ')
 lbl1.grid(row=0, column=0)
 ent1 = Entry(tab1)
 ent1.grid(row=0, column=1)
 
-lbl2 = Label(tab1, text='Введите второе число: ') # Ввод второго числа
+lbl2 = Label(tab1, text='Введите второе число: ') 
 lbl2.grid(row=1, column=0)
 ent2 = Entry(tab1)
 ent2.grid(row=1, column=1)
 
 
-oper_combo = Combobox(tab1) # Добавляем список операций на панель
+oper_combo = Combobox(tab1) 
 oper_combo['values'] = ['+', '-', '*', '/']
 oper_combo.current(0)
 oper_combo.grid(row=2, column=0)
@@ -78,7 +78,7 @@ oper_combo.grid(row=2, column=0)
 button_of_Kalc = Button(tab1, text='Посчитать', command=Kalc)
 button_of_Kalc.grid(row=2, column=1)
 
-result_lbl1 = Label(tab1, text='Ответ: ') # Выводим результат и через columnspan занимаем под ответ две ячейки
+result_lbl1 = Label(tab1, text='Ответ: ') 
 result_lbl1.grid(row=3, columnspan=2) 
 
 # Чекбоксы
@@ -86,7 +86,7 @@ check1 = IntVar()
 check2 = IntVar()
 check3 = IntVar()
 
-checkbox1 = Checkbutton(tab2, text='Первый', variable=check1) # Добавляем чеки на панель и через sticky прилепляем их к левому краю
+checkbox1 = Checkbutton(tab2, text='Первый', variable=check1) 
 checkbox1.grid(row=0, sticky=W)
 checkbox2 = Checkbutton(tab2, text='Второй', variable=check2) 
 checkbox2.grid(row=1, sticky=W)
