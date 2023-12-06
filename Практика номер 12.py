@@ -19,7 +19,7 @@ def Give_to_file():
     data = dict()
     
     for i in need_keys: # Проходим по нужным ключам и ищем подходящие пары под ключи
-        data[i] = user_data.get() # Получаем данные по ключам и записываем в словарь
+        data[i] = user_data.get(i) # Получаем данные по ключам и записываем в словарь
         with open('C://Users/User/Desktop/vvod.txt', 'w') as file:
             file.write(json.dumps(data, indent = 4)) # Записываем все в файл с помощью dumps. indent - количество отступов
         
